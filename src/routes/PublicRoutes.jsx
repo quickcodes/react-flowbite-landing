@@ -4,6 +4,7 @@ import { Outlet } from "react-router-dom";
 import Header from "@/layout/Header";
 import Home from "@/view/Home";
 import Footer from "@/layout/Footer";
+import ApexChart from "../view/Home/components/ApexChart";
 
 
 const PublicLayout = ({ children }) => (
@@ -22,6 +23,10 @@ const publicRoutes = [
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/charts",
+        element: <ApexChart />,
       },
     ],
   },
